@@ -1,0 +1,39 @@
+E01 short_term: Ten du an ca nhan toi vua nhac la gi?
+  PASS  0.1 ms
+E06 semantic: Quy tac retry POST payment la gi?
+  PASS  880.7 ms
+E09 long_term: Lan uu tien stack backend nao cho LOTUS-88?
+  PASS  1479.9 ms
+E10 short_term: Deadline review cu la khi nao?
+  PASS  12.3 ms
+E02 long_term: Voi demo ca nhan cua Minh, ngon ngu uu tien la gi?
+  PASS  1747.3 ms
+E03 long_term: Minh con open loop hay deadline nao chua hoan thanh?
+  PASS  2133.7 ms
+E04 episodic: Lan truoc Minh fix async HTTP timeout bang cach nao?
+  PASS  362.5 ms
+E05 episodic: Reflection cua su co async la gi, tang timeout co phai root fix khong?
+  PASS  371.8 ms
+E07 mixed: Hay chon huong dan code retry payment phu hop voi preference ca nhan cua Minh.
+  PASS  1889.6 ms
+E11 semantic: Theo incident playbook, truoc khi tang timeout can kiem tra gi?
+  PASS  269.0 ms
+E08 long_term: Backend cua BLUEBIRD-42 bat buoc dung stack gi?
+  PASS  1598.4 ms
+            Benchmark summary            
+┏━━━━━━┳━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━━━━━┓
+┃ Case ┃ Layer      ┃ Pass ┃ Latency ms ┃
+┡━━━━━━╇━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━━━━━┩
+│ E01  │ short_term │ yes  │        0.1 │
+│ E06  │ semantic   │ yes  │      880.7 │
+│ E09  │ long_term  │ yes  │     1479.9 │
+│ E10  │ short_term │ yes  │       12.3 │
+│ E02  │ long_term  │ yes  │     1747.3 │
+│ E03  │ long_term  │ yes  │     2133.7 │
+│ E04  │ episodic   │ yes  │      362.5 │
+│ E05  │ episodic   │ yes  │      371.8 │
+│ E07  │ mixed      │ yes  │     1889.6 │
+│ E11  │ semantic   │ yes  │      269.0 │
+│ E08  │ long_term  │ yes  │     1598.4 │
+└──────┴────────────┴──────┴────────────┘
+Reports: /workspace/reports/benchmark.json | /workspace/reports/benchmark.md
