@@ -5,22 +5,22 @@
 - Cases: **11**
 - Passed: **11/11**
 - Evidence hit rate: **100.0%**
-- Average retrieval latency: **976.8 ms**
+- Average retrieval latency: **775.9 ms**
 - Average token reduction vs full source context: **14.2%**
 
 | Case | Layer | Pass | Latency ms | Retrieved tokens | Token reduction | Missing / Error |
 | --- | --- | --- | ---: | ---: | ---: | --- |
-| E01 | short_term | PASS | 0.1 | 133 | 0.0% |  |
-| E06 | semantic | PASS | 880.7 | 148 | 67.8% |  |
-| E09 | long_term | PASS | 1479.9 | 907 | 0.0% |  |
-| E10 | short_term | PASS | 12.3 | 195 | 0.0% |  |
-| E02 | long_term | PASS | 1747.3 | 1322 | 0.0% |  |
-| E03 | long_term | PASS | 2133.7 | 1339 | 0.0% |  |
-| E04 | episodic | PASS | 362.5 | 562 | 0.0% |  |
-| E05 | episodic | PASS | 371.8 | 586 | 0.0% |  |
-| E07 | mixed | PASS | 1889.6 | 485 | 14.2% |  |
-| E11 | semantic | PASS | 269.0 | 146 | 74.2% |  |
-| E08 | long_term | PASS | 1598.4 | 1328 | 0.0% |  |
+| E01 | short_term | PASS | 0.0 | 133 | 0.0% |  |
+| E06 | semantic | PASS | 764.4 | 148 | 67.8% |  |
+| E09 | long_term | PASS | 1313.6 | 1029 | 0.0% |  |
+| E10 | short_term | PASS | 0.6 | 195 | 0.0% |  |
+| E02 | long_term | PASS | 1349.9 | 1726 | 0.0% |  |
+| E03 | long_term | PASS | 1374.0 | 1795 | 0.0% |  |
+| E04 | episodic | PASS | 267.2 | 858 | 0.0% |  |
+| E05 | episodic | PASS | 270.4 | 839 | 0.0% |  |
+| E07 | mixed | PASS | 1642.4 | 485 | 14.2% |  |
+| E11 | semantic | PASS | 204.9 | 146 | 74.2% |  |
+| E08 | long_term | PASS | 1347.1 | 1844 | 0.0% |  |
 
 ## Evidence excerpts
 
@@ -34,7 +34,7 @@
 
 ### E09 - long_term
 
-`<USER_SUMMARY> The user's project is LOTUS-88. They prioritize Java and Spring Boot for backend examples and do not use Python for the backend. </USER_SUMMARY>  <EPISODES> Episodes are source message or document excerpts shown in selection order.   - Created At: 2026-08-01 11:00:20     Source: message     Content: Lab Assistant (assistant): Da hieu: LOTUS-88, Java + Spring Boot cho backend examples.   - Created At: 2026-08-17 09:54:42     Source: message     Content: [user] {   "user_id": "lan-lab17",   "first_name": "Lan",   "last_name": "Tran",   "user_alias": "Evaluation User" }: Minh la Lan, sap giai trinh doi tac ve lua chon backend. Nhac lai: san pham cua minh dung ngon ngu va framewor`
+`<USER_SUMMARY> The user's project is LOTUS-88. They prioritize Java and Spring Boot for backend examples and do not use Python for the backend. </USER_SUMMARY>  <EPISODES> Episodes are source message or document excerpts shown in selection order.   - Created At: 2026-08-01 11:00:20     Source: message     Content: Lab Assistant (assistant): Da hieu: LOTUS-88, Java + Spring Boot cho backend examples.   - Created At: 2026-08-17 13:40:57     Source: message     Content: [user] {   "user_id": "lan-lab17",   "first_name": "Lan",   "last_name": "Tran",   "user_alias": "Evaluation User" }: Minh la Lan, sap giai trinh doi tac ve lua chon backend. Nhac lai: san pham cua minh dung ngon ngu va framewor`
 
 ### E10 - short_term
 
@@ -42,19 +42,19 @@
 
 ### E02 - long_term
 
-`<USER_SUMMARY> Minh's personal project is named ORCHID-27, for which he prefers to use Python. For the company project BLUEBIRD-42, the backend must use TypeScript with NestJS, and Python is not to be used for this specific project.  Minh prefers Python and dislikes Java. When explaining code, he wants short examples. When discussing async/await, coroutines, and Tasks, he wants explanations to be provided using a timeline.  When explaining code, use short examples. When discussing async/await, coroutines, and Tasks, provide explanations using a timeline. </USER_SUMMARY>  <EPISODES> Episodes are source message or document excerpts shown in selection order.   - Created At: 2026-08-17 09:55:00 `
+`<USER_SUMMARY> Minh's personal project is named ORCHID-27, for which he prefers to use Python. For the company project BLUEBIRD-42, the backend must use TypeScript with NestJS, and Python is not to be used for this specific project.  Minh prefers Python and dislikes Java. When explaining code, he wants short examples. When discussing async/await, coroutines, and Tasks, he wants explanations to be provided using a timeline.  When explaining code, use short examples. When discussing async/await, coroutines, and Tasks, provide explanations using a timeline. </USER_SUMMARY>  <EPISODES> Episodes are source message or document excerpts shown in selection order.   - Created At: 2026-08-17 13:41:12 `
 
 ### E03 - long_term
 
-`<USER_SUMMARY> Minh's personal project is named ORCHID-27, for which he prefers to use Python. For the company project BLUEBIRD-42, the backend must use TypeScript with NestJS, and Python is not to be used for this specific project.  Minh prefers Python and dislikes Java. When explaining code, he wants short examples. When discussing async/await, coroutines, and Tasks, he wants explanations to be provided using a timeline.  When explaining code, use short examples. When discussing async/await, coroutines, and Tasks, provide explanations using a timeline. </USER_SUMMARY>  <EPISODES> Episodes are source message or document excerpts shown in selection order.   - Created At: 2026-08-17 09:54:56 `
+`<USER_SUMMARY> Minh's personal project is named ORCHID-27, for which he prefers to use Python. For the company project BLUEBIRD-42, the backend must use TypeScript with NestJS, and Python is not to be used for this specific project.  Minh prefers Python and dislikes Java. When explaining code, he wants short examples. When discussing async/await, coroutines, and Tasks, he wants explanations to be provided using a timeline.  When explaining code, use short examples. When discussing async/await, coroutines, and Tasks, provide explanations using a timeline. </USER_SUMMARY>  <EPISODES> Episodes are source message or document excerpts shown in selection order.   - Created At: 2026-08-17 13:41:08 `
 
 ### E04 - episodic
 
-`EPISODE: Backend cua BLUEBIRD-42 bat buoc dung stack gi? EPISODE: Cuoi tuan minh ngoi mot minh lam demo rieng, khong hop team. Truoc khi chon template, nhac lai: khi lam viec ca nhan minh uu tien ngon ngu nao, va ma du an demo ca nhan la gi? Chi  EPISODE: Minh sap viet script ca nhan de tai hien su co latency, muon code dung ngon ngu minh thich khi lam mot minh, dong thoi bam sat playbook incident cua lab chu dung vo tang timeout. G EPISODE: Toi nay minh viet tool ca nhan de tai hien su co HTTP roi sua dung playbook. Can ba manh: ngon ngu minh thich khi lam mot minh, ma su co async lan truoc, va buoc playbook truoc khi EPISODE: Minh con mot open-loop phai nop truoc deadline, dong thoi muon g`
+`EPISODE: Minh sap viet script ca nhan de tai hien su co latency, muon code dung ngon ngu minh thich khi lam mot minh, dong thoi bam sat playbook incident cua lab chu dung vo tang timeout. Ghep hai manh: stack ca nhan cua Minh, va buoc bat buoc trong playbook truoc khi noi timeout. Dung lay stack cua ai khac. EPISODE: Minh sap giai thich coroutine cho ban, dong thoi can nhac policy retry payment vao vi du. Minh hoc kieu nao thi de nho? Va request retry payment phai mang header nao? Dung lay style hay stack cua nguoi khac. EPISODE: Cong ty yeu cau chinh context window cho agent tren dung backend du an cong ty. Minh can biet stack bat buoc cua BLUEBIRD va ty le budget bon tang nho trong lab de `
 
 ### E05 - episodic
 
-`EPISODE: Backend cua BLUEBIRD-42 bat buoc dung stack gi? EPISODE: Cuoi tuan minh ngoi mot minh lam demo rieng, khong hop team. Truoc khi chon template, nhac lai: khi lam viec ca nhan minh uu tien ngon ngu nao, va ma du an demo ca nhan la gi? Chi  EPISODE: Minh sap viet script ca nhan de tai hien su co latency, muon code dung ngon ngu minh thich khi lam mot minh, dong thoi bam sat playbook incident cua lab chu dung vo tang timeout. G EPISODE: Toi nay minh viet tool ca nhan de tai hien su co HTTP roi sua dung playbook. Can ba manh: ngon ngu minh thich khi lam mot minh, ma su co async lan truoc, va buoc playbook truoc khi EPISODE: Minh con mot open-loop phai nop truoc deadline, dong thoi muon g`
+`EPISODE: Minh sap viet script ca nhan de tai hien su co latency, muon code dung ngon ngu minh thich khi lam mot minh, dong thoi bam sat playbook incident cua lab chu dung vo tang timeout. Ghep hai manh: stack ca nhan cua Minh, va buoc bat buoc trong playbook truoc khi noi timeout. Dung lay stack cua ai khac. EPISODE: Minh sap giai thich coroutine cho ban, dong thoi can nhac policy retry payment vao vi du. Minh hoc kieu nao thi de nho? Va request retry payment phai mang header nao? Dung lay style hay stack cua nguoi khac. EPISODE: Cong ty yeu cau chinh context window cho agent tren dung backend du an cong ty. Minh can biet stack bat buoc cua BLUEBIRD va ty le budget bon tang nho trong lab de `
 
 ### E07 - mixed
 
@@ -66,4 +66,4 @@
 
 ### E08 - long_term
 
-`<USER_SUMMARY> Minh's personal project is named ORCHID-27, for which he prefers to use Python. For the company project BLUEBIRD-42, the backend must use TypeScript with NestJS, and Python is not to be used for this specific project.  Minh prefers Python and dislikes Java. When explaining code, he wants short examples. When discussing async/await, coroutines, and Tasks, he wants explanations to be provided using a timeline.  When explaining code, use short examples. When discussing async/await, coroutines, and Tasks, provide explanations using a timeline. </USER_SUMMARY>  <EPISODES> Episodes are source message or document excerpts shown in selection order.   - Created At: 2026-08-17 09:55:04 `
+`<USER_SUMMARY> Minh's personal project is named ORCHID-27, for which he prefers to use Python. For the company project BLUEBIRD-42, the backend must use TypeScript with NestJS, and Python is not to be used for this specific project.  Minh prefers Python and dislikes Java. When explaining code, he wants short examples. When discussing async/await, coroutines, and Tasks, he wants explanations to be provided using a timeline.  When explaining code, use short examples. When discussing async/await, coroutines, and Tasks, provide explanations using a timeline. </USER_SUMMARY>  <EPISODES> Episodes are source message or document excerpts shown in selection order.   - Created At: 2026-08-17 13:41:15 `
