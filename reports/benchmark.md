@@ -5,22 +5,22 @@
 - Cases: **11**
 - Passed: **11/11**
 - Evidence hit rate: **100.0%**
-- Average retrieval latency: **775.9 ms**
-- Average token reduction vs full source context: **14.2%**
+- Average retrieval latency: **750.4 ms**
+- Average token reduction vs full source context: **12.9%**
 
 | Case | Layer | Pass | Latency ms | Retrieved tokens | Token reduction | Missing / Error |
 | --- | --- | --- | ---: | ---: | ---: | --- |
 | E01 | short_term | PASS | 0.0 | 133 | 0.0% |  |
-| E06 | semantic | PASS | 764.4 | 148 | 67.8% |  |
-| E09 | long_term | PASS | 1313.6 | 1029 | 0.0% |  |
-| E10 | short_term | PASS | 0.6 | 195 | 0.0% |  |
-| E02 | long_term | PASS | 1349.9 | 1726 | 0.0% |  |
-| E03 | long_term | PASS | 1374.0 | 1795 | 0.0% |  |
-| E04 | episodic | PASS | 267.2 | 858 | 0.0% |  |
-| E05 | episodic | PASS | 270.4 | 839 | 0.0% |  |
-| E07 | mixed | PASS | 1642.4 | 485 | 14.2% |  |
-| E11 | semantic | PASS | 204.9 | 146 | 74.2% |  |
-| E08 | long_term | PASS | 1347.1 | 1844 | 0.0% |  |
+| E06 | semantic | PASS | 607.4 | 148 | 67.8% |  |
+| E09 | long_term | PASS | 1303.8 | 786 | 0.0% |  |
+| E10 | short_term | PASS | 0.4 | 195 | 0.0% |  |
+| E02 | long_term | PASS | 1371.3 | 1184 | 0.0% |  |
+| E03 | long_term | PASS | 1380.8 | 1221 | 0.0% |  |
+| E04 | episodic | PASS | 232.5 | 255 | 0.0% |  |
+| E05 | episodic | PASS | 241.2 | 274 | 0.0% |  |
+| E07 | mixed | PASS | 1558.2 | 1125 | 0.0% |  |
+| E11 | semantic | PASS | 245.7 | 146 | 74.2% |  |
+| E08 | long_term | PASS | 1313.3 | 1224 | 0.0% |  |
 
 ## Evidence excerpts
 
@@ -34,7 +34,7 @@
 
 ### E09 - long_term
 
-`<USER_SUMMARY> The user's project is LOTUS-88. They prioritize Java and Spring Boot for backend examples and do not use Python for the backend. </USER_SUMMARY>  <EPISODES> Episodes are source message or document excerpts shown in selection order.   - Created At: 2026-08-01 11:00:20     Source: message     Content: Lab Assistant (assistant): Da hieu: LOTUS-88, Java + Spring Boot cho backend examples.   - Created At: 2026-08-17 13:40:57     Source: message     Content: [user] {   "user_id": "lan-lab17",   "first_name": "Lan",   "last_name": "Tran",   "user_alias": "Evaluation User" }: Minh la Lan, sap giai trinh doi tac ve lua chon backend. Nhac lai: san pham cua minh dung ngon ngu va framewor`
+`<USER_SUMMARY> Lan Tran's main project is LOTUS-88. They prioritize Java and Spring Boot for backend examples.  Lan prefers to use Java and Spring Boot and explicitly avoids using Python in backend examples. </USER_SUMMARY>  <EPISODES> Episodes are source message or document excerpts shown in selection order.   - Created At: 2026-08-01 11:00:20     Source: message     Content: Lab Assistant (assistant): Da hieu: LOTUS-88, Java + Spring Boot cho backend examples.   - Created At: 2026-08-01 11:00:00     Source: message     Content: [user] {   "user_id": "lan-lab17",   "first_name": "Lan",   "last_name": "Tran",   "user_alias": "Lan Tran" }: Toi la Lan. Du an cua toi la LOTUS-88. Toi uu tien Ja`
 
 ### E10 - short_term
 
@@ -42,28 +42,28 @@
 
 ### E02 - long_term
 
-`<USER_SUMMARY> Minh's personal project is named ORCHID-27, for which he prefers to use Python. For the company project BLUEBIRD-42, the backend must use TypeScript with NestJS, and Python is not to be used for this specific project.  Minh prefers Python and dislikes Java. When explaining code, he wants short examples. When discussing async/await, coroutines, and Tasks, he wants explanations to be provided using a timeline.  When explaining code, use short examples. When discussing async/await, coroutines, and Tasks, provide explanations using a timeline. </USER_SUMMARY>  <EPISODES> Episodes are source message or document excerpts shown in selection order.   - Created At: 2026-08-17 13:41:12 `
+`<USER_SUMMARY> The user is working on a personal project named ORCHID-27, which they prefer to use Python for. For the company project BLUEBIRD-42, the backend must be developed using TypeScript with NestJS, and Python is not to be used. The user is also debugging async HTTP requests for the ASYNC-FIX-20 incident. The solution involves reusing the aiohttp ClientSession and setting concurrency to 20, as the issue was connection churn, not the timeout threshold. A benchmark report for ORCHID-27 is due by Saturday at 16:00.  Minh Nguyen prefers Python and dislikes Java. When explaining code, use short examples. The user is learning about async/await and sometimes confuses coroutine with Task. I`
 
 ### E03 - long_term
 
-`<USER_SUMMARY> Minh's personal project is named ORCHID-27, for which he prefers to use Python. For the company project BLUEBIRD-42, the backend must use TypeScript with NestJS, and Python is not to be used for this specific project.  Minh prefers Python and dislikes Java. When explaining code, he wants short examples. When discussing async/await, coroutines, and Tasks, he wants explanations to be provided using a timeline.  When explaining code, use short examples. When discussing async/await, coroutines, and Tasks, provide explanations using a timeline. </USER_SUMMARY>  <EPISODES> Episodes are source message or document excerpts shown in selection order.   - Created At: 2026-08-17 13:41:08 `
+`<USER_SUMMARY> The user is working on a personal project named ORCHID-27, which they prefer to use Python for. For the company project BLUEBIRD-42, the backend must be developed using TypeScript with NestJS, and Python is not to be used. The user is also debugging async HTTP requests for the ASYNC-FIX-20 incident. The solution involves reusing the aiohttp ClientSession and setting concurrency to 20, as the issue was connection churn, not the timeout threshold. A benchmark report for ORCHID-27 is due by Saturday at 16:00.  Minh Nguyen prefers Python and dislikes Java. When explaining code, use short examples. The user is learning about async/await and sometimes confuses coroutine with Task. I`
 
 ### E04 - episodic
 
-`EPISODE: Minh sap viet script ca nhan de tai hien su co latency, muon code dung ngon ngu minh thich khi lam mot minh, dong thoi bam sat playbook incident cua lab chu dung vo tang timeout. Ghep hai manh: stack ca nhan cua Minh, va buoc bat buoc trong playbook truoc khi noi timeout. Dung lay stack cua ai khac. EPISODE: Minh sap giai thich coroutine cho ban, dong thoi can nhac policy retry payment vao vi du. Minh hoc kieu nao thi de nho? Va request retry payment phai mang header nao? Dung lay style hay stack cua nguoi khac. EPISODE: Cong ty yeu cau chinh context window cho agent tren dung backend du an cong ty. Minh can biet stack bat buoc cua BLUEBIRD va ty le budget bon tang nho trong lab de `
+`EPISODE: Hay chon huong dan code retry payment phu hop voi preference ca nhan cua Minh. EPISODE: Ten du an ca nhan cua toi la ORCHID-27. Toi thich Python va khong thich Java. Khi giai thich code, hay dung vi du ngan. EPISODE: Toi dang hoc async/await va hay nham coroutine voi Task. Neu sau nay gap chu de nay, hay giai thich bang timeline. EPISODE: TODO: hoan thanh benchmark report truoc thu Sau luc 16:00. Day la open loop LAB-REPORT-1600. EPISODE: Hom nay toi debug async HTTP. Toi da thu tang timeout len 60s nhung van fail. EPISODE: Cach hieu qua la reuse aiohttp ClientSession va dat concurrency=20. Reflection: loi chinh la connection churn, khong phai timeout threshold. Ma su co ASYNC-FIX-2`
 
 ### E05 - episodic
 
-`EPISODE: Minh sap viet script ca nhan de tai hien su co latency, muon code dung ngon ngu minh thich khi lam mot minh, dong thoi bam sat playbook incident cua lab chu dung vo tang timeout. Ghep hai manh: stack ca nhan cua Minh, va buoc bat buoc trong playbook truoc khi noi timeout. Dung lay stack cua ai khac. EPISODE: Minh sap giai thich coroutine cho ban, dong thoi can nhac policy retry payment vao vi du. Minh hoc kieu nao thi de nho? Va request retry payment phai mang header nao? Dung lay style hay stack cua nguoi khac. EPISODE: Cong ty yeu cau chinh context window cho agent tren dung backend du an cong ty. Minh can biet stack bat buoc cua BLUEBIRD va ty le budget bon tang nho trong lab de `
+`EPISODE: Hay chon huong dan code retry payment phu hop voi preference ca nhan cua Minh. EPISODE: Ten du an ca nhan cua toi la ORCHID-27. Toi thich Python va khong thich Java. Khi giai thich code, hay dung vi du ngan. EPISODE: Toi dang hoc async/await va hay nham coroutine voi Task. Neu sau nay gap chu de nay, hay giai thich bang timeline. EPISODE: TODO: hoan thanh benchmark report truoc thu Sau luc 16:00. Day la open loop LAB-REPORT-1600. EPISODE: Hom nay toi debug async HTTP. Toi da thu tang timeout len 60s nhung van fail. EPISODE: Hay kiem tra connection pool, lifecycle cua client va concurrency. EPISODE: Cach hieu qua la reuse aiohttp ClientSession va dat concurrency=20. Reflection: loi c`
 
 ### E07 - mixed
 
-`<LONG_TERM> <USER_SUMMARY> Minh's personal project is named ORCHID-27, for which he prefers to use Python. For the company project BLUEBIRD-42, the backend must use TypeScript with NestJS, and Python is not to be used for this specific project.  Minh prefers Python and dislikes Java. When explaining code, he wants short examples. When discussing async/await, coroutines, and Tasks, he wants explanations to be provided using a timeline.  When explaining code, use short examples. When discussing async/await, coroutines, and Tasks, provide explanations using a timeline. </USER_SUMMARY>  <EPISODES> Episodes are source message or document excerpts shown in selection order.   - Created At: 2026-08-`
+`<LONG_TERM> <USER_SUMMARY> The user is working on a personal project named ORCHID-27, which they prefer to use Python for. For the company project BLUEBIRD-42, the backend must be developed using TypeScript with NestJS, and Python is not to be used. The user is also debugging async HTTP requests for the ASYNC-FIX-20 incident. The solution involves reusing the aiohttp ClientSession and setting concurrency to 20, as the issue was connection churn, not the timeout threshold. A benchmark report for ORCHID-27 is due by Saturday at 16:00.  Minh Nguyen prefers Python and dislikes Java. When explaining code, use short examples. The user is learning about async/await and sometimes confuses coroutine `
 
 ### E11 - semantic
 
-`EPISODE: {"id":"kb-async-http","entity":"Async HTTP Incident Playbook","summary":"When async HTTP calls time out, inspect connection pooling, downstream saturation and concurrency before increasing timeout. Reuse a long-lived client session where possible. Marker: CONN-POOL-FIRST.","source":"incident-playbook-2026","updated_at":"2026-08-11T00:00:00Z"} metadata= EPISODE: When async HTTP calls time out, inspect connection pooling, downstream saturation and concurrency before increasing timeout. Reuse a long-lived client session where possible. Marker: CONN-POOL-FIRST. metadata=`
+`EPISODE: When async HTTP calls time out, inspect connection pooling, downstream saturation and concurrency before increasing timeout. Reuse a long-lived client session where possible. Marker: CONN-POOL-FIRST. metadata= EPISODE: {"id":"kb-async-http","entity":"Async HTTP Incident Playbook","summary":"When async HTTP calls time out, inspect connection pooling, downstream saturation and concurrency before increasing timeout. Reuse a long-lived client session where possible. Marker: CONN-POOL-FIRST.","source":"incident-playbook-2026","updated_at":"2026-08-11T00:00:00Z"} metadata=`
 
 ### E08 - long_term
 
-`<USER_SUMMARY> Minh's personal project is named ORCHID-27, for which he prefers to use Python. For the company project BLUEBIRD-42, the backend must use TypeScript with NestJS, and Python is not to be used for this specific project.  Minh prefers Python and dislikes Java. When explaining code, he wants short examples. When discussing async/await, coroutines, and Tasks, he wants explanations to be provided using a timeline.  When explaining code, use short examples. When discussing async/await, coroutines, and Tasks, provide explanations using a timeline. </USER_SUMMARY>  <EPISODES> Episodes are source message or document excerpts shown in selection order.   - Created At: 2026-08-17 13:41:15 `
+`<USER_SUMMARY> The user is working on a personal project named ORCHID-27, which they prefer to use Python for. For the company project BLUEBIRD-42, the backend must be developed using TypeScript with NestJS, and Python is not to be used. The user is also debugging async HTTP requests for the ASYNC-FIX-20 incident. The solution involves reusing the aiohttp ClientSession and setting concurrency to 20, as the issue was connection churn, not the timeout threshold. A benchmark report for ORCHID-27 is due by Saturday at 16:00.  Minh Nguyen prefers Python and dislikes Java. When explaining code, use short examples. The user is learning about async/await and sometimes confuses coroutine with Task. I`
